@@ -1,0 +1,2 @@
+1: Learning Design Patterns.
+2: Step by step
