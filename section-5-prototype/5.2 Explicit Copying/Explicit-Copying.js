@@ -13,6 +13,9 @@ class Address {
     `;
   }
 
+  /**
+   * If you want to make a deep copy of an object you essentialy need to make deep copies of the primitive members of the object
+   */
   deepCopy() {
     return new Address(this.street, this.city, this.country);
   }
@@ -28,6 +31,9 @@ class Person {
     return `${this.name} lives at ${this.address.toString()}`;
   }
 
+  /**
+   * If you want to make a deep copy of an object you essentialy need to make deep copies of the primitive members of the object
+   */
   deepCopy() {
     return new Person(this.name, /* this.address */ this.address.deepCopy());
   }
